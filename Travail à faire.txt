@@ -1,0 +1,257 @@
+US1:   Integration de la page de connection
+Description
+Intégrer la page de connexion
+
+Pièces jointes
+PDF
+0. Page de connexion.pdf
+Ajouté 13 avr. à 13:37
+
+Intégrer la page de connexion
+0%
+Page de connexion intégrée
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+US2:En tant qu'utilisateur (Admin ou Joueur) je peux me connecter au jeux
+Dans la liste Encours
+ÉTIQUETTES
+Priorité 3FonctionnelSprint 1
+DATE LIMITE
+Description
+Ce US permet à un utilisateur déja enregistré de se connecté ou à un utilisateur connecté de se déconnecté.
+Démonstration
+1)Saisir les Informations de Connexion
+2)Valider les Données Saisies
+3)Vérifier l'existence des Informations de Connexion dans le FichierJson
+4)Afficher les Messages d'erreur en cas d'erreur
+5)Faire la redirection
+
+Définition JSON
+0%
+Définir la structure du Fichier JSON
+Initialiser un utilisateur Admin et un utilisateur Joueur
+Validation
+0%
+Affichage des Messages d'erreur
+Tous les champs sont Obligatoires
+Connexion de l'utlisateur
+0%
+Verifier l'existence des Info de Connexion
+Rediriger vers la Page Accueil lorsque c'est un Admin qui s'est connecté
+Rediriger vers la Page de Jeux lorsque c'est un Joueur qui s'est connecté
+Afficher le nom, le prénom et la photo de l’utilisateur connecté
+Déconnexion de l'utilisateur
+0%
+Le lien de déconnexion est accessible dans la partie ADMIN comme dans la partie Joueur.
+Lors de la déconnexion, l’utilisateur ne peut pas revenir dans l’application sans se reconnecter.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+US3:  Integration de la page d'administration du jeux
+Description
+Intégrer la page d’administration du Jeux.Cette page affiche par défaut la liste des joueur.
+
+Pièces jointes
+PDF
+3. Liste joueur.pdf
+Ajouté 15 avr. à 07:42
+
+Réaliser le Menu
+0%
+Liste Des questions
+Créer Compte
+Réaliser la zone d'affichage de la Liste des Questions
+0%
+Réaliser la zone d'affichage de la Liste des Questions
+Réaliser la Zone de Texte permettant de fixer le nombre de questions par jeu
+0%
+Réaliser la Zone de Texte permettant de fixer le nombre de questions par jeu
+Zone d'affichage de l'utilisateur connecté
+0%
+Zone d'affichage de l'utilisateur connecté
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+US4: Integrer la maquette création d'un utilisateur
+Description
+Ce Us Permet de faire l'intégration de la Page permettant de d'enregistrer un Admin ou un Joueur
+
+Pièces jointes
+PDF
+Création compte user.pdf
+Ajouté 15 avr. à 07:49
+
+PDF
+2. Création compte admin.pdf
+Ajouté 15 avr. à 07:44
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+US5: En tant Admin je peux enregistrer un admin ou en tnat joueur je peux m'inscrire.
+Description
+Ce US permet d'enregister un admin ou un joueur.
+Démonstration:
+-Saisir et valider les Informations
+-Verification des Données Saisies
+-Verifier que le login saisit n'existe pas
+-En Cas de Validation Enregistrement de l'utlisateur
+-En Cas D'erreur affichage du Message d'erreur
+
+Définition de la structure du Fichier Json
+0%
+Fichier définie
+Validation des Données
+0%
+Tous les champs sont Obligatoires
+Le Login est Unique
+Choisir et affichage de l’image sélectionnée
+Seules les images au format PNG ou JPEG sont permises
+Affichage des Messages Erreurs
+Toutes les validations sont faites en JS
+Enregistrement de L'utilisateur
+0%
+Ajouter l'utlisateur dans le fichier Json
+Rediriger vers la Page Connexion lorsque c'est un Joueur qui est crée
+Rediriger vers la Page Accueil lorsque c'est un Admin qui est crée
+
+--------------------------------------------------------------------------------------------------------------
+
+US6: En tant Admin je peux lister les joueurs ou en tant que joueur je peux lister mon dernier score et les 5 meilleurs joueurs.
+Description
+Se Connecter
+Afficher la liste des joueurs
+Pièces jointes
+PDF
+Interface joueur.pdf
+Ajouté 15 avr. à 07:52
+
+Taches
+0%
+Afficher le score du joueur connecté
+Afficher le score du joueur et les 5 meilleurs joueurs.
+(Admin) Lister les Joueurs dans l'ordre décroissant du Score,cette liste est paginéé par page de 15
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+US7: Entant Admin, je peux créer une Question
+Dans la liste Product Backlog
+ÉTIQUETTES
+Priorité 2FonctionnelSprint 3
+Description
+Cet Us permet à un admin de créer une question
+Démonstration
+L’admin se connecte,puis clique sur le menu crée une question .
+Une fois la page de création de question affichée , il peut :
+-Saisir la question
+-Saisir le nombre de points de la question
+-Sélectionner le type de la réponse
+-Ajouter une réponse possible
+-Saisir les réponses possibles
+- Saisir ou cocher les bonnes réponses
+-Supprimer une réponse en cas erreur
+Une fois toutes les informations saisies l’admin peut Enregistrer :
+-Lorsque toutes les informations saisies son valident alors la questions ainsi que ses réponses sont enregistrées dans le fichier Json de questions
+-Lorsqu’il y’a erreur alors on lui ré affiche la page de création de question avec le ou les messages erreurs correspondants.
+
+Contraines
+0%
+Les questions sont enregistrées dans un fichier JSON
+Le Nbre de points d’une question est supérieur ou égale à 1
+Les validations sont faites côté client et côté serveur
+L’ajout d’un champ de réponse possible est faite en JavaScript
+La suppression d’un champ de réponse est faite en JavaScript
+Création du Fichier Json de Questions
+0%
+Création du Fichier questions.json
+Structuration du Fichier
+Validation
+0%
+Tous les champs sont Obligatoires
+Une question est d’un type text , choix simple ou choix multiple
+Une question de type text a une seule réponse possible
+Une question de type choix simple ou choix multiple peut avoir plusieurs réponses possibles
+Une question de type text ou de choix simple à une et une seule bonne réponse.
+Une question de type choix multiple peut avoir plusieurs bonnes réponses
+Lors de l’enregistrement d’une question seule les champs réponses non vides sont enregistrés
+Taches
+0%
+Générer un champ de réponse possible de type text lorsque la question est de type Text
+Générer des champs de réponse possibles de type text et des boutons radio lorsque la question est de type choix simple
+Générer des champs de réponse possibles de type text et des boutons checkbox lorsque la question est de type choix multiple
+Valider le Formulaire avant soumission
+Enregistrer la question dans le Json
+
+
+
+
+US8:
+------------------------------------------------------------------------------------------------------------------------------------------------
+US9: En tant que Admin, je peux fixer et modifier le nombre de questions par jeux 
+Description
+Ce Us permet à un admin du jeu de fixer le nombre de questions par jeu à partir de l’interface Liste question.
+L’administrateur se connecte et accède à l’interface Liste question, puis fixe le nombre question/ jeu.
+NB: Ce nombre fixe le nombre de questions par jeu.
+
+Contraintes
+0%
+Les Validations sont faites en JS et en PHP
+Validation
+0%
+Ce nombre doit être supérieur ou égal à 5
+Taches
+0%
+Fixer le nombre de questions par jeu
+Modifier le nombre de questions par jeu
+Afficher le nombre de question par jeux dans l’input au lancement de la vue liste des questions
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+US10: En tant que joueur je peux jouer une partie
+Description
+En tant que joueur je peux me connecter et accéder à l’interface jouer pour jouer une partie.
+Cette interface est affichée avec un nombre de questions généré à partir du nombre fixé par l’admin. Une fois les questions, le joueur peut répondre aux questions ou pas .
+A la fin du jeu, on lui fait un récapitulatif de la liste des questions trouvées ou pas trouvées et ainsi que son score.
+Le score du joueur peut être mis à jour .
+
+Contraintes
+0%
+Le bouton précédent est désactivé lorsqu’on se trouve sur la première question et actif pour toutes les autres questions
+Le bouton suivant est activé sur toutes les questions du jeu sauf pour la dernière page.
+Dans la dernière page le bouton Terminer remplace le bouton Suivant.
+Une question est trouvée que si le joueur donne exactement la où les bonnes réponses.
+Le Joueur peut ne pas répondre à une question ,alors cette question sera considérée comme fausse.
+A la fin d’un jeux le score est mis à jour que si ce score obtenu est supérieur au score du joueur avant le début du jeu
+Lorsqu’une question est trouvée alors elle n’est plus proposée à ce joueur lors d’une autre partie.
+Taches
+0%
+Générer et afficher les questions du jeu après la connexion.
+Répondre à une question
+Naviguer entre les différentes questions à partir des boutons suivant ou précèdent
+Lors de la navigation à travers les boutons suivants ou précédents, les questions répondues restent cochées et le joueur a la possibilité de changer sa réponse
+Lorsque le joueur clique sur le bouton Terminer,faire un récapitulatif de la liste des questions trouvées ou pas trouvées et ainsi que le score joueur. Le score du joueur peut être mis à jour.
+Ajouter un bouton quitter qui permettra au joueur de quitter le jeu à tout moment, et dans ce cas on fait le récapitulatif comme ci il avait cliqué sur le bouton Terminer.
+Validation
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+US11:  En tant que developpeur, je dois déployer l'application dans un serveur distant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

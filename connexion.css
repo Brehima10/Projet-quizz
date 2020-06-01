@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('quizformat/image/img-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat
+}
+nav{
+    background-color: #042425;
+    height: 80px;
+}
+.titre{
+	color:white;
+	font-size:2.5em;
+	margin-left:400px;
+}
+.B{
+	margin-left:170px;
+	
+	
+}
