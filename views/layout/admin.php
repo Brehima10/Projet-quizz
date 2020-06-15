@@ -12,22 +12,12 @@
   </head>
   <body>
       <nav class="navbar navbar-expand-sm navbar-dark " style="height:100px;text-align:center ; background-color: #042425;" >
-      <img src="<?=URL_quizformat?>/image/logo-QuizzSA.png" class="img-fluid" style="height:100px; margin-right: 500px;"> 
+      <img src="quizformat/image/logo-QuizzSA.png" class="img-fluid" style="height:100px; margin-right: 500px;"> 
       <p class="text-center" style="align-items: center;color: #f8fdfd;font-size: 40px;">Le plaisir de jouer</p>
          
       </nav>
       <style> 
-      body{
-        background:url('quizformat/image/img-bg.jpg') ;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      ul li{
-       font-weight: bold;
-      }
-      .left-trois p{
-     margin-left: 10px;
-      }
+      
       
 
       </style>
@@ -43,30 +33,30 @@
             <div class="rounded-circle"  style="width: 120px; height: 120px;border: solid #818181 2px;">
 
             <div class="left-deux" style="margin: 9px 0px 0px 8px;">
-                <img src="<?=URL_quizformat?>/image/avatar.png" class="rounded-circle" style="border:solid white 1px ;height: 100px; width: 100px; ;">
-                <h4 style="margin: -65px 0px 0px 134px"> AAA         BBB </h4>
+                <img src="quizformat/image/avatar1.png" class="rounded-circle" style="border:solid white 1px ;height: 100px; width: 100px; ;">
+                <h4 style="margin: -65px 0px 0px 134px"> TIM          BEETA</h4>
             </div>
         </div>
            </div>
            <div class="left-trois" style="margin: 13px 0px 0px -3px;">
             <div style="height: 60px; width: auto; border: solid white 3px;">
-                <div style="width: 5px;height: 60px;background-color:green ; "></div>
-            <a style="font-size: 22px;margin-top: -50px; " href="#">Liste Questions</a>
-            <img src="<?=URL_quizformat?>/image/ic-liste-active.png" style=" margin: -107px -18px -26px 323px;height: 25px;width: 25px;">
+               <div style="height: 60px; width: auto; border: solid white 3px; display: flex; flex-direction: column;">
+            <p style="font-size: 22px;">Liste Questions</p></div>
+            <img src="quizformat/image/ic-liste-active.png" style=" margin: -107px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height: 60px; width: auto; border: solid white 3px; display: flex; flex-direction: column;">
             
                 <p style="font-size: 22px;">Créer Admin</p>
-                <img src="<?=URL_quizformat?>/image/ic-ajout.png" style=" margin: -43px -18px -26px 323px;height: 25px;width: 25px;">
+                <img src="quizformat/image/ic-ajout.png" style=" margin: -43px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height: 60px; width: auto; border: solid white 3px;">
 
                 <p style="font-size: 22px;">Liste Joueurs</p>
-                <img src="<?=URL_quizformat?>/image/ic-liste.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
+                <img src="quizformat/image/ic-liste.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height:60px; width:auto; border: solid white 3px;">
                 <p style="font-size: 22px;">Créer Questions</p>
-                <img src="<?=URL_quizformat?>/image/ic-ajout.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
+                <img src="quizformat/image/ic-ajout.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
            </div>
         </div>
