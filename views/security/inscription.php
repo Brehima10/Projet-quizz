@@ -27,7 +27,7 @@
     <header>
         <nav class="nav">
             <div class="logo"><img src="quizformat/image/logo-QuizzSA.png" style="height: 75px; width: 150px"></div>
-            <p class="titre">Le plaisir de jouer</p> <a href="connexion.php" style="margin: 25px 0px 0px 130px;font-size: 20px;color: #3addd6;"> Deconnexion</a></div>
+            <p class="titre"></p> </div>
         </nav>
 		
 		
@@ -37,14 +37,11 @@
        
         
     
-           <div class="Z">
-          <div id="inscription-form" class="w-50 bgWhite container rounded  text-secondary py-2" style="background-color: #fefefe">
-            <div class=" inscription-form-header">
-                <h1 class="h4 m-0">S'INSCRIRE</h1>     
-                <p class="mb-1 ">Pour proposer un quizz</p>
-                <hr class="w-50 m-0">
-            </div>
-            <div class="inscription-form-body row" background="white">
+
+            
+			<div  style="background-color: #fefefe;width: 404px;height: 400px;margin: 20px -2px 99px 475px;">
+            <div class="d-flex" style="background-color: #51BFD0;height: 72px;">
+                <div class="inscription-form-body row" background="#51BFD0">
                 <div class="col-md-7" background="white">
                     <form class="pr-5">
                         <div class="form-group mb-1">
@@ -78,6 +75,7 @@
                         <img class="img-fluid" src="./image/" alt="">
                     </div>
                 </div>
+            </div>
             </div>
       
     <script src="quizformat/js/jquery.min.js"></script>

@@ -41,12 +41,12 @@
            <div class="left-trois" style="margin: 13px 0px 0px -3px;">
             <div style="height: 60px; width: auto; border: solid white 3px;">
                <div style="height: 60px; width: auto; border: solid white 3px; display: flex; flex-direction: column;">
-            <p style="font-size: 22px;">Liste Questions</p></div>
+            <a href="listequestion.php"><p style="font-size: 22px;">Liste Questions</p></a></div>
             <img src="quizformat/image/ic-liste-active.png" style=" margin: -107px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height: 60px; width: auto; border: solid white 3px; display: flex; flex-direction: column;">
             
-                <a href="admin.php" ><p style="font-size: 22px;">Créer Admin</p></a>
+                <p style="font-size: 22px;">Créer Admin</p>
                 <img src="quizformat/image/ic-ajout.png" style=" margin: -43px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height: 60px; width: auto; border: solid white 3px;">
@@ -55,7 +55,7 @@
                 <img src="quizformat/image/ic-liste.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
             <div style="height:60px; width:auto; border: solid white 3px;">
-                <a href="creationquestion.php" ><p style="font-size: 22px;">Créer Questions</p></a>
+                <a href="creationquestion.php"><p style="font-size: 22px;">Créer Questions</p></a>
                 <img src="quizformat/image/ic-ajout.png" style=" margin: -90px -18px -26px 323px;height: 25px;width: 25px;">
             </div>
            </div>

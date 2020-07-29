@@ -20,5 +20,16 @@ nav{
 	
 }
 .z{
-   margin-top:100px;
+   margin-top:80px;
 }
+.inscription-form-body row{
+	
+	margin-bottom:10px;
+}
+           <div class="Z">
+          <div id="inscription-form" class="w-50 bgWhite container rounded  text-secondary py-2" style="background-color: #fefefe">
+            <div class=" inscription-form-header">
+                <h1 class="h4 m-0">S'INSCRIRE</h1>     
+                <p class="mb-1 ">Pour proposer un quizz</p>
+                <hr class="w-50 m-0">
+            </div>
